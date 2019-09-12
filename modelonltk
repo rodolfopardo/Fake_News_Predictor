@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 11 18:20:46 2019
+
+@author: rodolfopardo
+"""
+
+#Importando librerias 
+
+import pandas as pd
+import numpy as np 
+
+
+#Importando NTLK para trabajar mis datos en textos
+import nltk
+from nltk.corpus import stopwords
+from nltk import word_tokenize
+from nltk import sent_tokenize
+from nltk.data import load
+from nltk.stem import SnowballStemmer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.model_selection import train_test_split
+
+#Funcion para leer el csv 
+
+def leer(url):
+    df = pd.read_csv(url)
+    return df
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#URL de csv
+url = "datalimpia.csv"
+
+#Llamo a la funcion para leer datos 
+
+df = leer(url)
+
+    
